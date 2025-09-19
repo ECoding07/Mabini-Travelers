@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mabini Travelers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mabini Travelers</div>
+
+      <!-- mobile toggle -->
+      <input id="nav-toggle" type="checkbox" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#attractions">Attractions</a></li>
+        <li><a href="#map">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Discover Mabini</h1>
+        <p>Where adventure meets tranquility — dive, hike, and taste the best of Batangas.</p>
+        <div class="hero-ctas">
+          <a href="#attractions" class="btn">Explore Attractions</a>
+          <a href="home.html" class="btn btn-ghost">Plan Your Trip</a>
+        </div>
+      </div>
+
+      <div class="hero-meta">
+        <div class="meta-card">
+          <strong>Best time to visit</strong>
+          <span>November – May</span>
+        </div>
+        <div class="meta-card">
+          <strong>Top activity</strong>
+          <span>Scuba diving (Anilao)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Highlights -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>Welcome to Mabini</h2>
+      <p class="lead">
+        Tucked on the southern coast of Batangas, Mabini is a paradise for divers, beach-lovers,
+        and anyone who wants a quiet coastal escape. From vibrant coral gardens to scenic mountain
+        viewpoints, Mabini is small in size and big on adventure.
+      </p>
+
+      <div class="highlight-grid">
+        <article class="highlight">
+          <div class="icon">🏝️</div>
+          <h3>Pristine Beaches</h3>
+          <p>Enjoy calm coves, soft sand, and beautiful sunsets away from the crowds.</p>
+        </article>
+
+        <article class="highlight">
+          <div class="icon">🤿</div>
+          <h3>World-Class Diving</h3>
+          <p>Explore Anilao’s coral walls, critter sites, and underwater photography spots.</p>
+        </article>
+
+        <article class="highlight">
+          <div class="icon">⛰️</div>
+          <h3>Scenic Hikes</h3>
+          <p>Short treks reward you with sweeping views of Batangas Bay and nearby volcanoes.</p>
+        </article>
+
+        <article class="highlight">
+          <div class="icon">🍴</div>
+          <h3>Local Cuisine</h3>
+          <p>Savor fresh seafood, bulalo, and Batangueño specialties from friendly local eateries.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section id="attractions" class="carousel-section">
+    <h2>Top Attractions</h2>
+
+    <div class="carousel">
+      <div class="slides fade">
+        <img src="beach.jpg" alt="Beach">
+        <div class="caption">Beautiful Beaches</div>
+      </div>
+
+      <div class="slides fade">
+        <img src="diving.webp" alt="Diving">
+        <div class="caption">Diving Spots (Anilao)</div>
+      </div>
+
+      <div class="slides fade">
+        <img src="mountain.jpg" alt="Mountain">
+        <div class="caption">Mountain Views</div>
+      </div>
+    </div>
+
+    <!-- Dots (static — app.js should use `.dot` class) -->
+    <div class="dots">
+      <span class="dot" aria-label="slide 1"></span>
+      <span class="dot" aria-label="slide 2"></span>
+      <span class="dot" aria-label="slide 3"></span>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Traveler Stories</h2>
+
+      <div class="test-grid">
+        <blockquote class="testimonial">
+          <p>"The diving in Anilao was unforgettable — clear water and friendly guides. Highly recommend!"</p>
+          <cite>— Maya R.</cite>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p>"Quiet beaches and amazing sunsets. A perfect weekend getaway from the city."</p>
+          <cite>— Arvin S.</cite>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p>"Local food was delicious — especially the seafood markets and small carinderias."</p>
+          <cite>— Liza M.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (uses native details element) -->
+  <section class="faq container">
+    <h2>FAQ</h2>
+
+    <details>
+      <summary>What’s the best way to get to Mabini?</summary>
+      <p>Most visitors drive from Manila (approx. 2.5–3 hours) or take buses to Batangas City then local transport to Mabini.</p>
+    </details>
+
+    <details>
+      <summary>Do I need to book diving in advance?</summary>
+      <p>Peak season can be busy — book ahead for specific dive guides or liveaboard trips.</p>
+    </details>
+
+    <details>
+      <summary>Are there family-friendly beaches?</summary>
+      <p>Yes — several beaches have calm waters suitable for families and children.</p>
+    </details>
+  </section>
+
+  <!-- Map -->
+  <section id="map" class="map-section">
+    <h2>Find Us</h2>
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.2213302629146!2d120.71944037464404!3d13.753490297918925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd0f3dc7d6ab0b%3A0xa2e0b640d3c4b837!2sMabini%2C%20Batangas!5e0!3m2!1sen!2sph!4v1693791708371!5m2!1sen!2sph"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Contact / Newsletter -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact & Newsletter</h2>
+      <p>Questions? Message us at <a href="mailto:info@mabinitravelers.com">info@mabinitravelers.com</a></p>
+
+      <form class="newsletter" action="#" onsubmit="event.preventDefault(); alert('Thanks — newsletter signups not configured in demo');">
+        <input class="email" type="email" placeholder="Your email" required />
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2025 Mabini Travelers. All Rights Reserved.</p>
+      <small>Built with care — visit responsibly and support local communities.</small>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

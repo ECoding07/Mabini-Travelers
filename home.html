@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mabini Travelers | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+/* HERO CAROUSEL SLIDE MOTION */
+.hero-carousel {
+  position: relative;
+  height: 60vh;
+  min-height: 360px;
+  overflow: hidden;
+}
+
+.hero-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.hero-slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  image-rendering: -webkit-optimize-contrast;
+  filter: brightness(0.92) contrast(1.05);
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 16px 24px;
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1rem;
+}
+
+.hero-dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero-dot.active {
+  background: var(--accent, #ffd166);
+  transform: scale(1.2);
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mabini Travelers</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="main.html">Discover</a></li>
+        <li><a href="home.html#plan">Plan Your Trip</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="hero-carousel">
+  <div class="hero-track">
+    <div class="hero-slide" style="background-image: url('https://1.bp.blogspot.com/-2fYlhP1T3iU/XWQPeE14OnI/AAAAAAAA1LM/-fTIvfrQG4IGl9HJ9lc_1BZgxOjDoFGVQCEwYBhgL/s1600/LRM_EXPORT_10939539808790_20190826_214943658.jpeg');">
+      <div class="hero-content">
+        <h1>Relaxing Resorts</h1>
+        <p>Unwind in luxury with beachfront villas, infinity pools, and world-class amenities.</p>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('https://www.thepoortraveler.net/wp-content/uploads/2017/03/Masasa-Beach-Batangas-1.jpg');">
+      <div class="hero-content">
+        <h1>Pristine Beaches</h1>
+        <p>Feel the soft sand beneath your feet and swim in crystal-clear waters of Mabini.</p>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('mountain.jpg');">
+      <div class="hero-content">
+        <h1>Scenic Mountains</h1>
+        <p>Breathe fresh air while hiking trails with panoramic views of Batangas Bay.</p>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('https://gttp.images.tshiftcdn.com/450503/x/0/.jpg?crop=1.91%3A1&width=1200&fit=crop');">
+      <div class="hero-content">
+        <h1>World-Class Diving</h1>
+        <p>Discover vibrant coral reefs and marine life in the diving capital of the Philippines.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- dots -->
+  <div class="hero-dots">
+    <span class="hero-dot active"></span>
+    <span class="hero-dot"></span>
+    <span class="hero-dot"></span>
+    <span class="hero-dot"></span>
+  </div>
+</section>
+
+
+  <!-- Category Options -->
+  <section class="categories">
+    <div class="container">
+      <h2>Choose Your Adventure</h2>
+      <p class="lead">Pick a category and start planning your trip.</p>
+
+      <div class="category-grid">
+
+        <article class="category-card">
+          <img src="https://images.trvl-media.com/lodging/5000000/4170000/4165800/4165773/e2b19872.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Resorts">
+          <div class="category-content">
+            <h3>Resorts</h3>
+            <p>Stay in modern and comfortable resorts with stunning oceanfront views.</p>
+            <a href="main.html#plan" class="btn">Plan Resort Trip</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <img src="beach.jpg" alt="Beaches">
+          <div class="category-content">
+            <h3>Beaches</h3>
+            <p>Enjoy sunbathing, swimming, and beach activities on Mabini’s sandy shores.</p>
+            <a href="main.html#plan" class="btn">Plan Beach Trip</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <img src="mountain.jpg" alt="Mountain Spots">
+          <div class="category-content">
+            <h3>Mountain Spots</h3>
+            <p>Hike up scenic trails and capture breathtaking mountain views.</p>
+            <a href="main.html#plan" class="btn">Plan Mountain Trip</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <img src="diving.webp" alt="Diving Spots">
+          <div class="category-content">
+            <h3>Diving Spots</h3>
+            <p>Explore Anilao’s underwater paradise with rich coral reefs and diverse marine life.</p>
+            <a href="main.html#plan" class="btn">Plan Diving Trip</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- Plan Your Trip -->
+  <section id="plan" class="plan">
+    <div class="container">
+      <h2>Plan Your Trip</h2>
+      <p class="lead">Quick links to help you book a comfortable and fun visit.</p>
+
+      <div class="plan-grid">
+        <div class="card">
+          <h3>Hotels & Lodging</h3>
+          <p>From beachfront resorts to cozy guesthouses — options for every budget.</p>
+          <a href="#" class="card-btn">View hotels</a>
+        </div>
+
+        <div class="card">
+          <h3>Activities & Tours</h3>
+          <p>Guided dives, island-hopping, snorkeling, and hiking tours led by local operators.</p>
+          <a href="#" class="card-btn">Book activities</a>
+        </div>
+
+        <div class="card">
+          <h3>Transport & Transfers</h3>
+          <p>Arrive by car or public transport. We can connect you with van transfers and boat rentals.</p>
+          <a href="#" class="card-btn">Get transport</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Got questions? Email us at <a href="mailto:info@mabinitravelers.com">info@mabinitravelers.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2025 Mabini Travelers. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- HERO CAROUSEL SCRIPT -->
+    <script>
+    const track = document.querySelector(".hero-track");
+    const slides = document.querySelectorAll(".hero-slide");
+    const dots = document.querySelectorAll(".hero-dot");
+
+    let index = 0;
+    const totalSlides = slides.length;
+
+    function showSlide(n) {
+        index = n;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach(dot => dot.classList.remove("active"));
+        dots[index].classList.add("active");
+    }
+
+    function nextSlide() {
+        index = (index + 1) % totalSlides;
+        showSlide(index);
+    }
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => showSlide(i));
+    });
+
+    setInterval(nextSlide, 5000); // auto-slide every 5s
+    </script>
+
+</body>
+</html>
